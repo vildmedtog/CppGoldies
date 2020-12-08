@@ -1,0 +1,10 @@
+/debug
+ClassDiagram*.cd
+/CppGoldies001/debug
+/CppGoldies002/debug
+/CppGoldies001/old
+/CppGoldies002/old
+/CppGoldies001/CppGoldies001.vcxproj.user
+/CppGoldies002/CppGoldies002.vcxproj.user
+/.vs
+.DS_Store
