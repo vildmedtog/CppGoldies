@@ -16,4 +16,4 @@ $(BUILD_DIR):
 	$(shell mkdir -p $@)
 
 clean:
-	rm -rf $(OUTFOLDER)
+	rm -rf $(BUILD_DIR)
