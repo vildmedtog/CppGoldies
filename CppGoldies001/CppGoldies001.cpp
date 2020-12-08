@@ -1,5 +1,14 @@
-// CppGoldies.cpp : Defines the entry point for the console application.
-//
+/**
+ * @file MainFrame.hpp
+ * @author Henning Laursen (HL@vildmedtog.dk)
+ * @brief Defines the entry point for the console application (for edducational purpose).
+ * @version 0.1
+ * @date 2020-11-05
+ * 
+ * @copyright Copyright (c) 2020
+ * 
+ */
+/*__________________________________________________________________________*/
 
 #include <cstdint>
 #include <deque>
