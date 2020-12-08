@@ -1,14 +1,19 @@
 COMPILE = c++
 LINK = $(COMPILE)
 CFLAGS = -std=c++14
-PROGRAM = CppGoldies002
-OUTFOLDER = Debug
+PROGRAM = runnable
+BUILD_DIR = Debug
 
-ouput: CppGoldies002.o
-	$(LINK) $(OUTFOLDER)/CppGoldies002.o -o $(OUTFOLDER)/$(PROGRAM)
+ouput: checkdirs $(BUILD_DIR)/CppGoldies002.o
+	$(LINK) $(BUILD_DIR)/CppGoldies002.o -o $(BUILD_DIR)/$(PROGRAM)
 
-CppGoldies002.o: CppGoldies002.cpp
-	$(COMPILE) CppGoldies002.cpp -c $(CFLAGS)
+$(BUILD_DIR)/CppGoldies002.o: CppGoldies002.cpp
+	$(COMPILE) CppGoldies002.cpp -c $(CFLAGS) -o $@
+
+checkdirs: $(BUILD_DIR)
+
+$(BUILD_DIR):
+	$(shell mkdir -p $@)
 
 clean:
 	rm -rf $(OUTFOLDER)
