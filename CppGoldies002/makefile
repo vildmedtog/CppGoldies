@@ -1,4 +1,4 @@
-COMPILE = c++
+COMPILE =$(CXX)
 LINK = $(COMPILE)
 CFLAGS = -std=c++14
 PROGRAM = runnable
