@@ -1,7 +1,6 @@
 COMPILE = $(CXX)
 LINK = $(COMPILE)
-CFLAGS = 
-#-std=c++14
+CFLAGS = -std=c++14
 PROGRAM = runnable
 BUILD_DIR = Debug
 
